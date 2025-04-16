@@ -15,4 +15,7 @@ class ClarksonCoreset(Strategy):
 
         q_ixds, _ = computeClarksonCoreset(embedding)
 
+        np.random.shuffle(q_ixds)
+        q_ixds = q_ixds[:n]
+
         return idxs_unlabeled[q_idxs]
