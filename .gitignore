@@ -2,4 +2,6 @@
 **/*.xml
 **/*.iml
 **/.idea
-./save/
+**/save
+**/__pycache__
+**/dataset
